@@ -64,19 +64,30 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.23</version>
         </dependency>
-
-        <!--腾讯云短信服务-->
+<!--
+        &lt;!&ndash;腾讯云短信服务&ndash;&gt;
         <dependency>
             <groupId>com.tencentcloudapi</groupId>
             <artifactId>tencentcloud-sdk-java-sms</artifactId>
             <version>3.1.547</version>
         </dependency>
-        <!--腾讯云附件-->
+        &lt;!&ndash;腾讯云附件&ndash;&gt;
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.7.0</version>
+        </dependency>-->
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
 
     </dependencies>
 
