@@ -12,8 +12,14 @@ spring:
   redis:
     host: 192.168.199.132
     port: 6379
-    password: "000415"
+    password: "148963"
     database: 0
+  cache:
+    redis:
+      time-to-live: 1800000  #缓存有效期   单位:毫秒
+      cache-null-values: true #设置缓存空值,解决穿透问题
+      use-key-prefix: true #开启前缀,默认前缀是缓存名
+    type: redis
 
 
 mybatis-plus:
